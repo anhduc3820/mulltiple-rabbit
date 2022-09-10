@@ -17,4 +17,9 @@ public class TestController {
     public void sendRequest() {
         testService.sendRabbitSecondAndReceivedMessage();
     }
+
+    @GetMapping(value = "/send_quote")
+    public void sendQuote() {
+        testService.sendQuote();
+    }
 }
